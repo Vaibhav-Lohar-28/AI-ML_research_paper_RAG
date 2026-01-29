@@ -1,2 +1,64 @@
 # AI-ML_research_paper_RAG
-AI-ML research papers rag system 
+A sophisticated Retrieval-Augmented Generation (RAG) system designed to intelligently interact with AI and Machine Learning research papers. This system combines advanced document processing, vector embeddings, and agentic workflows to enable semantic search and natural language querying of research literature.
+🌟 Features
+
+Intelligent Document Processing: Automated ingestion and parsing of AI/ML research papers (PDF format)
+Semantic Search: Vector-based similarity search for finding relevant research papers and passages
+RAG Pipeline: State-of-the-art retrieval-augmented generation for context-aware responses
+Agentic Workflow: AI agent capabilities for autonomous research paper analysis and summarization
+Interactive Interface: User-friendly web application built with Streamlit
+Modular Architecture: Clean, maintainable code structure with separate components for each functionality
+
+📋 Table of Contents
+
+Architecture
+Installation
+Usage
+Project Structure
+Notebooks
+Configuration
+Contributing
+License
+
+🏗️ Architecture
+The system is built on four core components:
+
+Data Ingestion Module: Handles PDF parsing, text extraction, and preprocessing
+Vector Store: Manages document embeddings using state-of-the-art embedding models
+RAG Pipeline: Implements retrieval and generation mechanisms for query answering
+Agentic Layer: Provides autonomous capabilities for complex research tasks
+
+┌─────────────────┐
+│  Research Papers │
+│     (PDFs)      │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Data Ingestion  │
+│   & Chunking    │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Embedding &    │
+│  Vector Store   │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐      ┌──────────────┐
+│   RAG Pipeline  │◄─────┤ User Query   │
+│   & Retrieval   │      └──────────────┘
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Agentic Workflow│
+│   & Response    │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Web Interface  │
+│   (Streamlit)   │
+└─────────────────┘
